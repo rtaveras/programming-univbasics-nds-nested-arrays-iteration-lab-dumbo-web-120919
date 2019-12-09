@@ -20,15 +20,15 @@ def total_even_pairs(array)
   even_sum = 0
   num1 = 0
   while num1 < array.length
-   num2 = 0
-    while num2 < array[num1].length
-     even_sum += array[num1][num2]
-     num2 += 1
+    if array[num1][0] %2 == 0 && array[num1][1]%2 == 0
+     even_sum += array[num1][0] + array[num1][1]
     end
    num1 += 1 
   end
   return even_sum
 end 
+ 
+ 
  
 
 
